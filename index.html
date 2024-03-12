@@ -19,12 +19,16 @@
             class="svelte-u824j0" placeholder="50">
         </div>
       </label>
-      <div class="add-money-wrapper svelte-tsenul"><button class="add-money svelte-tsenul" type="button">+ 100
-          ₽</button> <button class="add-money svelte-tsenul" type="button">+ 500 ₽</button> <button
-          class="add-money svelte-tsenul" type="button">+ 1000 ₽</button></div>
+      <div class="add-money-wrapper svelte-tsenul">
+        <button class="add-money svelte-tsenul" type="button">100</button>
+        <button class="add-money svelte-tsenul" type="button">500</button>
+        <button class="add-money svelte-tsenul" type="button">1000</button>
+      </div>
       <div class="range svelte-tsenul">
-        <div class="svelte-1dvvwkv"><input type="range" min="50" max="15000" aria-label="Сумма" class="svelte-1dvvwkv">
-          <span>50₽</span> <span>15000₽</span>
+        <div class="svelte-1dvvwkv">
+          <input type="range" min="50" max="15000" aria-label="Сумма" id="svelte-1dvvwkv" value="50">
+          <span>50₽</span>
+          <span>15000₽</span>
         </div>
       </div>
       <div class="info-message svelte-tsenul">
@@ -37,71 +41,24 @@
               <line x1="12" y1="16" x2="12.01" y2="16"></line>
             </svg></span>
           <div class="info svelte-8q7e0o">
-            <div class="content"><b>Внимание:</b> Указывайте только логин Steam. Мы пополняем аккаунты только из стран
-              СНГ
-              (Россия, Казахстан, Узбекистан и др.). Для пополнения аккаунтов из Крыма, Луганска и Донецка
-              сперва
+            <div class="content"><b>Внимание:</b> Указывайте только логин Steam.
               <a href="https://battlepass.ru/info/faq#krim" style="color: orange;">прочтите гайд</a>. Если
               сумма пополнения больше 500$ - напишите нам в чат поддержки!
             </div>
           </div>
         </div>
-        <div style="display: contents; --info-bg-start: #CFC355; --info-bg-end: #B49D4D; --info-text-color: #23282E;">
-          <div class="message message--type-custom svelte-8q7e0o"><span class="icon svelte-8q7e0o"><svg
-                xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-alert-triangle ">
-                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
-                </path>
-                <line x1="12" y1="9" x2="12" y2="13"></line>
-                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-              </svg></span>
-            <div class="info svelte-8q7e0o">
-              <div class="title svelte-8q7e0o">Обратите внимание</div>
-              <div class="content"><b>Внимание:</b> Если у вас на аккаунте до этого не было пополнений
-                <a href="https://battlepass.ru/info/faq#acc" style="color: brown;">прочтите гайд</a>.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="checkout svelte-pn689t">
-      <table class="svelte-1szy6vr">
-        <tbody>
-          <tr class="svelte-1szy6vr">
-            <th class="svelte-1szy6vr">Логин Steam</th>
-            <td class="svelte-1szy6vr"></td>
-          </tr>
+        <table>
           <tr class="svelte-1szy6vr">
             <th class="svelte-1szy6vr">Сумма</th>
             <td class="svelte-1szy6vr">
               <div class="svelte-br80q">
-                <span class="total"></span>
-                <!-- <span class="original svelte-br80q"><span class="price svelte-br80q">64.90₽</span> <span
-                    class="blue svelte-1vujwtr">−7%</span></span> -->
               </div>
             </td>
           </tr>
-        </tbody>
-      </table>
-      <section class="svelte-1kb0jm1">
-        <header><label for="receipt_email" class="svelte-1kb0jm1">Почта для получения чека</label></header>
-        <div class="svelte-1kb0jm1"><input type="email" name="receipt_email" id="receipt_email" placeholder="Ваш E-mail"
-            class="svelte-1kb0jm1"> <button type="button" disabled="" class="svelte-1kb0jm1"><svg
-              xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-plus ">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg></button></div>
-      </section>
-      <div class="svelte-dmcgsa"><button type="submit" disabled="" class="svelte-dmcgsa">Пополнить</button> <span
-          class="terms svelte-dmcgsa">Нажимая кнопку пополнить, я принимаю условия <a href="info/agreement"
-            class="svelte-dmcgsa">Пользовательского Соглашения</a>
-          и подтверждаю ознакомление с
-          <a href="/info/faq" class="svelte-dmcgsa">FAQ</a></span></div>
+        </table>
+      </div>
+    </div>
+    </div>
     </div>
   </form>
 </body>
