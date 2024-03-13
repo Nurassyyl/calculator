@@ -13,6 +13,11 @@
   --grid-module: 4px
 }
 
+#svelte-1dvvwkv {
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
 .add-money {
   cursor: pointer;
 }
